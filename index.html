@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomō — Your world. Your circle. Always in sync.</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+
+  <!-- ============ HERO: PHONE MOCKUPS ============ -->
+  <section class="hero">
+    <!-- decorative ambient wave lines -->
+    <svg class="hero-waves hero-waves--left" viewBox="0 0 420 520" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-20,300 C60,260 100,340 180,300 C260,260 300,330 420,290" class="wave wave-a"/>
+      <path d="M-20,340 C60,300 110,380 190,340 C270,300 320,360 420,330" class="wave wave-b"/>
+      <path d="M-20,380 C60,350 120,410 200,380 C280,350 330,400 420,370" class="wave wave-c"/>
+    </svg>
+    <svg class="hero-waves hero-waves--right" viewBox="0 0 420 520" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,300 C100,260 140,340 220,300 C300,260 340,330 440,290" class="wave wave-a"/>
+      <path d="M0,340 C100,300 150,380 230,340 C310,300 360,360 440,330" class="wave wave-b"/>
+      <path d="M0,380 C100,350 160,410 240,380 C320,350 370,400 440,370" class="wave wave-c"/>
+    </svg>
+    <div class="hero-glow"></div>
+
+    <div class="phones">
+
+      <!-- Side phone — Left (purple) -->
+      <article class="phone phone--side phone--purple" data-phone="left">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+          <header class="status-bar">
+            <span class="status-bar__time">7:15</span>
+            <span class="status-bar__icons">
+              <svg viewBox="0 0 18 12" class="icon-signal"><rect x="0" y="7" width="3" height="5"/><rect x="5" y="5" width="3" height="7"/><rect x="10" y="3" width="3" height="9"/><rect x="15" y="0" width="3" height="12"/></svg>
+              <svg viewBox="0 0 16 12" class="icon-wifi"><path d="M8 10.2a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM3.6 6.8a6.2 6.2 0 018.8 0l-1.4 1.4a4.2 4.2 0 00-6 0L3.6 6.8zM.8 4a10 10 0 0114.4 0L13.8 5.4a8 8 0 00-11.6 0L.8 4z"/></svg>
+              <svg viewBox="0 0 24 12" class="icon-battery"><rect x="0.5" y="0.5" width="20" height="11" rx="2.5" fill="none" stroke="currentColor"/><rect x="2" y="2" width="15" height="8" rx="1.5"/><rect x="21.5" y="3.5" width="2" height="5" rx="1"/></svg>
+            </span>
+          </header>
+
+          <h1 class="greeting">Hi, I'm Tomō.</h1>
+
+          <div class="orb-wrap orb-wrap--sm">
+            <div class="orb-ring orb-ring--1"></div>
+            <div class="orb-ring orb-ring--2"></div>
+            <div class="orb orb--purple"></div>
+          </div>
+
+          <nav class="tab-bar">
+            <button class="tab-bar__item is-active" type="button">
+              <svg viewBox="0 0 24 24" class="tab-icon"><path d="M3 11.2 12 4l9 7.2V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>
+              <span>Home</span>
+            </button>
+            <button class="tab-bar__item" type="button">
+              <svg viewBox="0 0 24 24" class="tab-icon tab-icon--outline"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6.4 7-6.4s7 2.8 7 6.4"/></svg>
+              <span>Profile</span>
+            </button>
+          </nav>
+        </div>
+      </article>
+
+      <!-- Center phone — Pink/Orange (hero) -->
+      <article class="phone phone--center phone--pink" data-phone="center">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+          <header class="status-bar">
+            <span class="status-bar__time">7:15</span>
+            <span class="status-bar__icons">
+              <svg viewBox="0 0 18 12" class="icon-signal"><rect x="0" y="7" width="3" height="5"/><rect x="5" y="5" width="3" height="7"/><rect x="10" y="3" width="3" height="9"/><rect x="15" y="0" width="3" height="12"/></svg>
+              <svg viewBox="0 0 16 12" class="icon-wifi"><path d="M8 10.2a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM3.6 6.8a6.2 6.2 0 018.8 0l-1.4 1.4a4.2 4.2 0 00-6 0L3.6 6.8zM.8 4a10 10 0 0114.4 0L13.8 5.4a8 8 0 00-11.6 0L.8 4z"/></svg>
+              <svg viewBox="0 0 24 12" class="icon-battery"><rect x="0.5" y="0.5" width="20" height="11" rx="2.5" fill="none" stroke="currentColor"/><rect x="2" y="2" width="15" height="8" rx="1.5"/><rect x="21.5" y="3.5" width="2" height="5" rx="1"/></svg>
+            </span>
+          </header>
+
+          <h1 class="greeting greeting--lg">Hi, I'm Tomō.</h1>
+
+          <div class="orb-wrap orb-wrap--lg">
+            <div class="orb-ring orb-ring--1"></div>
+            <div class="orb-ring orb-ring--2"></div>
+            <div class="orb orb--pink" id="heroOrb"></div>
+          </div>
+
+          <p class="tagline">Your world. Your circle.<br>Always in sync.</p>
+
+          <nav class="tab-bar tab-bar--lg">
+            <button class="tab-bar__item is-active" type="button">
+              <svg viewBox="0 0 24 24" class="tab-icon"><path d="M3 11.2 12 4l9 7.2V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>
+              <span>Home</span>
+            </button>
+            <button class="tab-bar__item" type="button">
+              <svg viewBox="0 0 24 24" class="tab-icon tab-icon--outline"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6.4 7-6.4s7 2.8 7 6.4"/></svg>
+              <span>Profile</span>
+            </button>
+          </nav>
+        </div>
+      </article>
+
+      <!-- Side phone — Right (orange) -->
+      <article class="phone phone--side phone--orange" data-phone="right">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+          <header class="status-bar">
+            <span class="status-bar__time">7:15</span>
+            <span class="status-bar__icons">
+              <svg viewBox="0 0 18 12" class="icon-signal"><rect x="0" y="7" width="3" height="5"/><rect x="5" y="5" width="3" height="7"/><rect x="10" y="3" width="3" height="9"/><rect x="15" y="0" width="3" height="12"/></svg>
+              <svg viewBox="0 0 16 12" class="icon-wifi"><path d="M8 10.2a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4zM3.6 6.8a6.2 6.2 0 018.8 0l-1.4 1.4a4.2 4.2 0 00-6 0L3.6 6.8zM.8 4a10 10 0 0114.4 0L13.8 5.4a8 8 0 00-11.6 0L.8 4z"/></svg>
+              <svg viewBox="0 0 24 12" class="icon-battery"><rect x="0.5" y="0.5" width="20" height="11" rx="2.5" fill="none" stroke="currentColor"/><rect x="2" y="2" width="15" height="8" rx="1.5"/><rect x="21.5" y="3.5" width="2" height="5" rx="1"/></svg>
+            </span>
+          </header>
+
+          <h1 class="greeting">Hi, I'm Tomō.</h1>
+
+          <div class="orb-wrap orb-wrap--sm">
+            <div class="orb-ring orb-ring--1"></div>
+            <div class="orb-ring orb-ring--2"></div>
+            <div class="orb orb--orange"></div>
+          </div>
+
+          <nav class="tab-bar">
+            <button class="tab-bar__item is-active" type="button">
+              <svg viewBox="0 0 24 24" class="tab-icon"><path d="M3 11.2 12 4l9 7.2V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>
+              <span>Home</span>
+            </button>
+            <button class="tab-bar__item" type="button">
+              <svg viewBox="0 0 24 24" class="tab-icon tab-icon--outline"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6.4 7-6.4s7 2.8 7 6.4"/></svg>
+              <span>Profile</span>
+            </button>
+          </nav>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ MUSIC CARDS ============ -->
+  <section class="music-row">
+
+    <div class="card card--wave">
+      <canvas id="waveformCanvas" class="waveform-canvas"></canvas>
+      <div class="card--wave__label">
+        <span class="logo-mark">ll</span>ElevenLabs Music
+      </div>
+    </div>
+
+    <div class="card card--split">
+      <div class="split-panel split-panel--violet">
+        <p class="split-panel__title">Music<br>Lab<br>Collective</p>
+        <span class="split-panel__dot split-panel__dot--lg"></span>
+        <svg class="split-art" viewBox="0 0 200 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g class="swirl swirl--violet"></g>
+        </svg>
+        <span class="split-panel__dot split-panel__dot--sm"></span>
+      </div>
+      <div class="split-divider"></div>
+      <div class="split-panel split-panel--amber">
+        <p class="split-panel__title">One<br>Summer<br>Day</p>
+        <span class="split-panel__dot split-panel__dot--lg"></span>
+        <svg class="split-art" viewBox="0 0 200 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <g class="swirl swirl--amber"></g>
+        </svg>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features">
+    <div class="feature">
+      <span class="feature__icon feature__icon--radar">
+        <svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="24" class="ring ring-1"/><circle cx="28" cy="28" r="16" class="ring ring-2"/><circle cx="28" cy="28" r="6" class="dot"/></svg>
+      </span>
+      <p class="feature__label">Seamless<br>Connection</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature__icon feature__icon--sync">
+        <svg viewBox="0 0 56 32" class="eq-bars">
+          <rect x="2" y="13" width="3.4" height="6"/><rect x="8" y="9" width="3.4" height="14"/><rect x="14" y="4" width="3.4" height="24"/><rect x="20" y="11" width="3.4" height="10"/><rect x="26" y="0" width="3.4" height="32"/><rect x="32" y="7" width="3.4" height="18"/><rect x="38" y="12" width="3.4" height="8"/><rect x="44" y="4" width="3.4" height="24"/><rect x="50" y="10" width="3.4" height="12"/>
+        </svg>
+      </span>
+      <p class="feature__label">Real-time<br>Sync</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature__icon feature__icon--target">
+        <svg viewBox="0 0 56 56"><circle cx="28" cy="28" r="24" class="ring ring-1"/><circle cx="28" cy="28" r="16" class="ring ring-2"/><circle cx="28" cy="28" r="8" class="ring ring-3"/></svg>
+      </span>
+      <p class="feature__label">Personalized<br>Experience</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature__icon feature__icon--shield">
+        <svg viewBox="0 0 56 56"><path d="M28 6 47 13v13c0 14-9.5 20.6-19 24-9.5-3.4-19-10-19-24V13z" class="shield-body"/><rect x="21" y="25" width="14" height="11" rx="2" class="lock-body"/><path d="M24 25v-4a4 4 0 018 0v4" class="lock-shackle"/></svg>
+      </span>
+      <p class="feature__label">Private &amp;<br>Secure</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature__icon feature__icon--orb">
+        <span class="mini-orb"></span>
+      </span>
+      <p class="feature__label">Always<br>With You</p>
+    </div>
+
+    <div class="feature">
+      <span class="feature__icon feature__icon--waves">
+        <svg viewBox="0 0 56 40"><path d="M2 12c6-8 12 8 18 0s12 8 18 0 12 8 16 0" class="ctrl-wave ctrl-wave--1"/><path d="M2 22c6-8 12 8 18 0s12 8 18 0 12 8 16 0" class="ctrl-wave ctrl-wave--2"/><path d="M2 32c6-8 12 8 18 0s12 8 18 0 12 8 16 0" class="ctrl-wave ctrl-wave--3"/></svg>
+      </span>
+      <p class="feature__label">Effortless<br>Control</p>
+    </div>
+  </section>
+
+  <!-- ============ ASSET ORGANIZATION ============ -->
+  <section class="organize">
+    <p class="organize__eyebrow">Organized for easy implementation</p>
+
+    <div class="folder-tree">
+      <div class="tree-trunk"></div>
+      <div class="tree-drops">
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+      </div>
+
+      <div class="folders">
+        <div class="folder">
+          <span class="folder__icon">
+            <svg viewBox="0 0 64 50" class="folder-shape"><path d="M2 8a4 4 0 014-4h14l5 6h33a4 4 0 014 4v30a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg>
+            <svg viewBox="0 0 24 24" class="folder-glyph"><circle cx="6" cy="17" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="12" cy="14" r="1.6"/><path d="M6 17 12 14 18 8" fill="none" stroke-width="1.3"/></svg>
+          </span>
+          <p class="folder__name">01_Illustrations</p>
+          <div class="folder__tags"><span>SVG</span><span>PNG</span></div>
+        </div>
+
+        <div class="folder">
+          <span class="folder__icon">
+            <svg viewBox="0 0 64 50" class="folder-shape"><path d="M2 8a4 4 0 014-4h14l5 6h33a4 4 0 014 4v30a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg>
+            <svg viewBox="0 0 24 24" class="folder-glyph folder-glyph--fill"><circle cx="12" cy="12" r="7.5" fill="none" stroke-width="1.3"/><path d="M10 8.5 16 12 10 15.5z"/></svg>
+          </span>
+          <p class="folder__name">02_Animations</p>
+          <div class="folder__tags"><span>JSON</span><span>GIF</span></div>
+        </div>
+
+        <div class="folder">
+          <span class="folder__icon">
+            <svg viewBox="0 0 64 50" class="folder-shape"><path d="M2 8a4 4 0 014-4h14l5 6h33a4 4 0 014 4v30a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg>
+            <svg viewBox="0 0 24 24" class="folder-glyph"><rect x="4" y="6" width="16" height="12" rx="1.5" fill="none" stroke-width="1.3"/><circle cx="8.5" cy="10" r="1.3"/><path d="M4 16 9 12 13 15 16 11 20 14" fill="none" stroke-width="1.3"/></svg>
+          </span>
+          <p class="folder__name">03_Assets</p>
+          <div class="folder__tags"><span>PNG</span><span>SVG</span></div>
+        </div>
+
+        <div class="folder">
+          <span class="folder__icon">
+            <svg viewBox="0 0 64 50" class="folder-shape"><path d="M2 8a4 4 0 014-4h14l5 6h33a4 4 0 014 4v30a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg>
+            <svg viewBox="0 0 24 24" class="folder-glyph folder-glyph--fill"><path d="M12 4l2.3 5.1 5.6.5-4.2 3.7 1.3 5.5L12 15.9 6.9 18.8l1.3-5.5-4.2-3.7 5.6-.5z"/></svg>
+          </span>
+          <p class="folder__name">04_Icons</p>
+          <div class="folder__tags"><span>SVG</span><span>PNG</span></div>
+        </div>
+
+        <div class="folder">
+          <span class="folder__icon">
+            <svg viewBox="0 0 64 50" class="folder-shape"><path d="M2 8a4 4 0 014-4h14l5 6h33a4 4 0 014 4v30a4 4 0 01-4 4H6a4 4 0 01-4-4z"/></svg>
+            <svg viewBox="0 0 24 24" class="folder-glyph"><path d="M6 3h8l4 4v14H6z" fill="none" stroke-width="1.3"/><path d="M14 3v4h4" fill="none" stroke-width="1.3"/><line x1="8.5" y1="12" x2="15.5" y2="12" stroke-width="1.2"/><line x1="8.5" y1="15" x2="15.5" y2="15" stroke-width="1.2"/><line x1="8.5" y1="18" x2="13" y2="18" stroke-width="1.2"/></svg>
+          </span>
+          <p class="folder__name">05_Guides</p>
+          <div class="folder__tags"><span>PDF</span><span>PNG</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
